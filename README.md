@@ -74,8 +74,8 @@ O arquivo `tcp-server.js` implementa um servidor TCP que recebe pedidos JSON de 
 1. Clone o repositório:
 
    ```
-   git clone <URL do repositório>
-   cd <nome-do-repositório>
+   git clone https://github.com/KevynMurilo/microservice_print_impressora_termica.git
+   cd microservice_print_impressora_termica
    ```
 
 2. Instale as dependências:
