@@ -1,6 +1,3 @@
-Claro! Vamos criar uma documentação mais detalhada em Markdown, explicando cada parte do projeto e suas funcionalidades:
-
-```markdown
 # Sistema de Impressão de Pedidos
 
 Este projeto implementa um sistema para impressão de pedidos em impressoras térmicas utilizando Node.js e a biblioteca escpos.
@@ -19,8 +16,8 @@ O projeto está estruturado da seguinte forma:
 │   └── format.pedido.js      # Função utilitária para formatar dados do pedido
 │
 └── tcp-server.js             # Servidor TCP para recebimento e impressão de pedidos
-```
 
+```
 ## Componentes do Projeto
 
 ### `print.service.js`
@@ -104,9 +101,4 @@ Você pode enviar um pedido JSON para o servidor TCP na porta `9090`. O pedido d
 echo '{"numero_mesa": 1, "garcom": {"nome": "João Silva"}, "hora_pedido": "2024-07-06T14:30:00Z", "status": "pendente", "metodo_pagamento": "cartão", "itens": [{"produto": {"nome": "Café", "descricao": "Café expresso", "preco": 5.50}, "adicionais": [], "observacoes": "Sem açúcar"}]}' | nc localhost 9090
 ```
 
----
-
-Esta documentação fornece uma explicação detalhada de cada componente do projeto, suas funcionalidades, instruções de instalação e uso, além de um exemplo prático de como enviar um pedido para impressão através do servidor TCP. Certifique-se de ajustar conforme necessário com informações adicionais ou configurações específicas do ambiente de desenvolvimento.
-```
-
-Esta versão em Markdown oferece uma visão mais completa e detalhada do projeto, explicando cada componente e seu funcionamento, além de incluir instruções claras para instalação, execução e exemplos de uso.
+--------------------------------
