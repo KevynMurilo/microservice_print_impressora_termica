@@ -12,22 +12,20 @@ function printPedido(pedido) {
       device = new escpos.USB();
       printer = new escpos.Printer(device, { encoding: '860' });
     } catch (error) {
-      console.error('Erro ao conectar na impressora:', error);
       return reject(`Erro ao conectar na impressora - ${error}`);
     }
 
     device.open((error) => {
       if (error) {
-        console.error('Erro ao abrir a conexão com a impressora:', error);
         return reject(`Erro ao abrir a conexão com a impressora: ${error}`);
       }
 
       const formattedText = formatPedido(pedido);
 
       printer
-        .font('a')
+        .font('b')
         .align('lt')
-        .size(0, 0)
+        .size(1, 1)
         .text(formattedText)
         .cut()
         .close((err) => {

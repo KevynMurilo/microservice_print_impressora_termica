@@ -1,8 +1,6 @@
 const net = require('net');
 const { printPedido } = require('./services/print.service');
 
-const TCP_PORT = 9090;
-
 const tcpServer = net.createServer((socket) => {
   console.log('Cliente TCP conectado');
 
@@ -37,6 +35,4 @@ const tcpServer = net.createServer((socket) => {
   });
 });
 
-tcpServer.listen(TCP_PORT, () => {
-  console.log(`Servidor TCP rodando na porta ${TCP_PORT}`);
-});
+module.exports = tcpServer;
